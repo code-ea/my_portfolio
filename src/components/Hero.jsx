@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg">
               <img
-                src="https://media.licdn.com/dms/image/v2/D4D03AQEnuYV-y9rF1A/profile-displayphoto-shrink_800_800/B4DZTHkQBPG8Ac-/0/1738514957596?e=1744243200&v=beta&t=Z3igv9Hh9MsYqDS3YSJeLbWk92zaRLZNZO_EWC9hLmo"
+                src="https://avatars.githubusercontent.com/u/75689614?v=4"
                 width={40}
                 height={40}
                 alt="Nitin portrait"
@@ -58,7 +58,7 @@ const Hero = () => {
         <div className="hidden lg:block">
           <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
             <img
-              src="https://avatars.githubusercontent.com/u/75689614?v=4"
+              src="https://media.licdn.com/dms/image/v2/D4D03AQEnuYV-y9rF1A/profile-displayphoto-shrink_800_800/B4DZTHkQBPG8Ac-/0/1738514957596?e=1744243200&v=beta&t=Z3igv9Hh9MsYqDS3YSJeLbWk92zaRLZNZO_EWC9hLmo"
               width={656}
               height={800}
               alt="Hnery Clark"
