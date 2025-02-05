@@ -1,5 +1,5 @@
 /**
- * @copyright 2024 code-ea
+ * @copyright 2025 code-ea
  * @licence Apache-2.0
  */
 
@@ -101,7 +101,7 @@ const Footer = () => {
           </a>
 
           <p className="text-zinc-500 text-sm reveal-up">
-            &copy; 2024 <span className="text-zinc-200">code-ea</span>
+            &copy; 2025 <span className="text-zinc-200">code-ea</span>
           </p>
         </div>
       </div>

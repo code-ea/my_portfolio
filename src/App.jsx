@@ -1,5 +1,5 @@
 /**
- * @copyright 2024 code-ea
+ * @copyright 2025 code-ea
  * @licence Apache-2.0
  */
 
