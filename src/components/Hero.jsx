@@ -58,7 +58,7 @@ const Hero = () => {
         <div className="hidden lg:block">
           <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
             <img
-              src="https://th.bing.com/th/id/OIP.5d6Y1z47Xq_fJcZCdcPlogHaEK?w=309&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              src="https://avatars.githubusercontent.com/u/75689614?v=4"
               width={656}
               height={800}
               alt="Hnery Clark"
