@@ -1,3 +1,6 @@
+import { useState } from "react";
+import Lottie from "lottie-react";
+import thankYouAnimation from "../animations/thanks.json";
 /**
  * @copyright 2025 code-ea
  * @licence Apache-2.0
@@ -79,6 +82,22 @@ const socialLinks = [
 ];
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    // Submit form data to Google Forms
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      mode: "no-cors",
+    }).then(() => {
+      setSubmitted(true);
+    });
+  };
+
   return (
     <section id="contact" className="section">
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
@@ -86,74 +105,98 @@ const Contact = () => {
           <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
             Contact me for collaboration
           </h2>
-
           <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
-            Reach out today to discuss your project needs and start
-            collaborating on something amazing!
+            Reach out today to discuss your project needs and start collaborating on something amazing!
           </p>
-
           <div className="flex items-center gap-2 mt-auto">
             {socialLinks.map(({ href, icon }, key) => (
-              <a key={key} href={href} target="_blank" className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up">
+              <a
+                key={key}
+                href={href}
+                target="_blank"
+                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
+              >
                 {icon}
               </a>
             ))}
           </div>
         </div>
 
-        <form action="https://getform.io/f/brookoga" method="POST" className="xl:pl-10 2xl:pl-20">
-          <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
-            <div className="mb-4">
-              <label htmlFor="name" className="label reveal-up">
-                Name
-              </label>
-
-              <input
-                type="text"
-                name="name"
-                id="name"
-                autoComplete="name"
-                required
-                placeholder="Nitin Singh"
-                className="text-field reveal-up"
-              />
+        {!submitted ? (
+          <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLSeq4VQJJIZ1vZEIWxCw3Kzv9nmG14WJnQSS667OyDwx_9lN2Q/formResponse"
+            method="POST"
+            onSubmit={handleSubmit}
+            className="xl:pl-10 2xl:pl-20"
+          >
+            <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
+              <div className="mb-4">
+                <label htmlFor="name" className="label reveal-up">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  name="entry.2005620554"
+                  id="name"
+                  autoComplete="name"
+                  required
+                  placeholder="Nitin Singh"
+                  className="text-field reveal-up"
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="email" className="label reveal-up">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="entry.1045781291"
+                  id="email"
+                  autoComplete="email"
+                  required
+                  placeholder="nitin@example.com"
+                  className="text-field reveal-up"
+                />
+              </div>
             </div>
 
             <div className="mb-4">
-              <label htmlFor="email" className="label reveal-up">
-                Email
+              <label htmlFor="message" className="label reveal-up">
+                Message
               </label>
-
-              <input
-                type="email"
-                name="email"
-                id="email"
-                autoComplete="email"
+              <textarea
+                name="entry.839337160"
+                id="message"
+                placeholder="Hi!"
                 required
-                placeholder="nitin@example.com"
-                className="text-field reveal-up"
+                className="text-field resize-y min-h-32 max-h-80 reveal-up"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="btn btn-primary [&]:max-w-full w-full justify-center reveal-up"
+            >
+              Submit
+            </button>
+          </form>
+        ) : (
+          <div className="text-center">
+            <h3 className="text-xl font-semibold text-green-500">
+              ✅ Your message has been submitted!
+            </h3>
+            <p className="text-zinc-400 mt-2">Thank you for reaching out. I'll get back to you soon.</p>
+            <div className="mt-4 flex justify-center">
+              <Lottie
+                animationData={thankYouAnimation}
+                loop={true}
+                autoplay={true}
+                style={{ width: 150, height: 150 }} // Adjust size as needed
               />
             </div>
           </div>
 
-          <div className="mb-4">
-            <label htmlFor="message" className="label reveal-up">
-              Message
-            </label>
-
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Hi!"
-              required
-              className="text-field resize-y min-h-32 max-h-80 reveal-up"
-            ></textarea>
-          </div>
-
-          <button type="submit" className="btn btn-primary [&]:max-w-full w-full justify-center reveal-up">
-            Submit
-          </button>
-        </form>
+        )}
       </div>
     </section>
   );
