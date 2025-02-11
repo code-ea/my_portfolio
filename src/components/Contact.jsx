@@ -189,8 +189,8 @@ const Contact = () => {
             <div className="mt-4 flex justify-center">
               <Lottie
                 animationData={thankYouAnimation}
-                loop={true}
-                autoplay={true}
+                //loop={true}
+                //autoplay={true}
                 style={{ width: 150, height: 150 }} // Adjust size as needed
               />
             </div>
