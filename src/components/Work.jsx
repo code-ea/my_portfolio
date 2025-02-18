@@ -27,7 +27,7 @@ const works = [
     imgSrc: "/images/paintings.jpg",
     title: "Painting-Crypto eComm.",
     tags: ["Painting-eComm", "INPROGRESS"],
-    projectLink: "https://wewillbeheresoon/",
+    projectLink: "https://artgallery.nitin-dev.com/",
     stage: "inProgress"
   },
   {
