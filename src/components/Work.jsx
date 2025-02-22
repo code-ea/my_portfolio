@@ -34,8 +34,15 @@ const works = [
     imgSrc: "/images/code-editor.jpg",
     title: "Realtime Code-Editor",
     tags: ["onlineJudge", "INPROGRESS"],
-    projectLink: "https://realtime-compiler.vercel.app/",
-    stage: "inProgress"
+    projectLink: "https://realtime-compiler.nitin-dev.com/",
+    stage: ""
+  },
+  {
+    imgSrc: "/images/weather.jpg",
+    title: "Weather App",
+    tags: ["Open-Weather API", "Development"],
+    projectLink: "https://code-ea.github.io/Weather-App/",
+    stage: ""
   },
 ];
 
