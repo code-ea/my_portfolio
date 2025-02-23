@@ -33,7 +33,7 @@ const works = [
   {
     imgSrc: "/images/code-editor.jpg",
     title: "Realtime Code-Editor",
-    tags: ["onlineJudge", "INPROGRESS"],
+    tags: ["Compiler", "WebSockets"],
     projectLink: "https://realtime-compiler.nitin-dev.com/",
     stage: ""
   },
