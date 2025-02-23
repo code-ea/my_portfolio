@@ -20,7 +20,7 @@ const works = [
     imgSrc: "/images/project-5.jpg",
     title: "eCommerce website UI",
     tags: ["eCommerce", "Development"],
-    projectLink: "https://shopapp.nitin-dev.com/",
+    projectLink: "https://code-ea.github.io/Shopping-Cart-React-App/",
     stage: ""
   },
   {
