@@ -18,9 +18,9 @@ const works = [
   },
   {
     imgSrc: "/images/project-5.jpg",
-    title: "eCommerce website UI",
+    title: "eComm Shop App",
     tags: ["eCommerce", "Development"],
-    projectLink: "https://code-ea.github.io/Shopping-Cart-React-App/",
+    projectLink: "https://ecom.nitin-dev.com/",
     stage: ""
   },
   {
