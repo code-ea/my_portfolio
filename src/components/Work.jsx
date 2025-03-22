@@ -13,7 +13,7 @@ const works = [
     imgSrc: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a88362152045049.63172c318bc75.png",
     title: "Full stack payment app",
     tags: ["DB", "Development"],
-    projectLink: "https://paytm-t8rv.vercel.app/",
+    projectLink: "https://www.nitin-dev.com/",
     stage: ""
   },
   {
