@@ -9,6 +9,14 @@
 import ProjectCard from "./ProjectCard";
 
 const works = [
+  
+  {
+    imgSrc: "/images/leetcode.jpg",
+    title: "Leetcode Daily Tracker",
+    tags: ["Daily Life", "Development"],
+    projectLink: "https://leetracker.nitin-dev.com/",
+    stage: ""
+  },
   {
     imgSrc: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a88362152045049.63172c318bc75.png",
     title: "Full stack payment app",
