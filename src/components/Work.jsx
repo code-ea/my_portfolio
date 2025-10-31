@@ -18,6 +18,13 @@ const works = [
     stage: ""
   },
   {
+    imgSrc: "/images/notess.jpg",
+    title: "Notionary",
+    tags: ["Notes", "Development"],
+    projectLink: "https://notes.nitin-dev.com/",
+    stage: ""
+  },
+  {
     imgSrc: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a88362152045049.63172c318bc75.png",
     title: "Full stack payment app",
     tags: ["DB", "Development"],
