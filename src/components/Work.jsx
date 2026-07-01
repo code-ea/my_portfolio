@@ -14,42 +14,42 @@ const works = [
     imgSrc: "/images/leetcode.jpg",
     title: "Leetcode Daily Tracker",
     tags: ["Daily Life", "Development"],
-    projectLink: "https://leetracker.nitin-dev.com/",
+    projectLink: "https://leetracker.nitindevs.com/",
     stage: ""
   },
   {
     imgSrc: "/images/notess.jpg",
     title: "Notionary",
     tags: ["Notes", "Development"],
-    projectLink: "https://notes.nitin-dev.com/",
+    projectLink: "https://notes.nitindevs.com/",
     stage: ""
   },
   {
     imgSrc: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a88362152045049.63172c318bc75.png",
     title: "Full stack payment app",
     tags: ["DB", "Development"],
-    projectLink: "https://www.nitin-dev.com/",
+    projectLink: "https://paytm.nitindevs.com/",
     stage: ""
   },
   {
     imgSrc: "/images/project-5.jpg",
     title: "eComm Shop App",
     tags: ["eCommerce", "Development"],
-    projectLink: "https://ecom.nitin-dev.com/",
+    projectLink: "https://shop.nitindevs.com/",
     stage: ""
   },
   {
     imgSrc: "/images/paintings.jpg",
     title: "Painting-Crypto eComm.",
     tags: ["Painting-eComm", "INPROGRESS"],
-    projectLink: "https://artgallery.nitin-dev.com/",
+    projectLink: "https://artgallery.nitindevs.com/",
     stage: "inProgress"
   },
   {
     imgSrc: "/images/code-editor.jpg",
     title: "Realtime Code-Editor",
     tags: ["Compiler", "WebSockets"],
-    projectLink: "https://realtime-compiler.nitin-dev.com/",
+    projectLink: "https://codeshare.nitindevs.com/",
     stage: ""
   },
   {
